@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'blog',
     'blog_api',
+    'users',
     'rest_framework',
 ]
 
@@ -133,3 +134,6 @@ REST_FRAMEWORK = {
         'rest_framework_simplejwt.authentication.JWTAuthentication',
     )
 }
+
+
+AUTH_USER_MODEL = 'users.NewUser'
